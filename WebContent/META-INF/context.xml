@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+	<Resource 
+		name="jdbc/testDB"
+		auth="Container"
+		type="javax.sql.DataSource"
+		
+		maxTotal="100"
+		maxIdle="30"
+		maxWaitMillis="10000"
+		
+		username="extester"
+		password="1234"
+		driverClassName="oracle.jdbc.OracleDriver"
+		url="jdbc:oracle:thin:@localhost:1521:xe"
+	/>
+ <!-- 
+			initialSize="50"
+ 	initialSize : 최초시점에 getConnection() 를 통해 커넥션풀에 채워넣을 커넥션 개수(default:0)
+ 	maxTotal	: 동시에 사용할 수 있는 최대 커넥션 개수(default:8)
+ 					1.x에서는 maxActive
+	maxIdle		: ConnectionPool에 반납할 때 최대로 유지될 수 있는 커넥션 개수(default:8)
+	minIdle		: 최소한으로 유지할 커넥션 개수(default:0)
+	maxWaitMillis	: pool이 고갈되었을 경우 최대 대기 시간(ms단위, default:-1(무한정))
+					1.x에서는 maxWait
+  -->
+</Context>

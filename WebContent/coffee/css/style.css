@@ -1,0 +1,96 @@
+ @charset "UTF-8";
+
+h1 {
+	text-align: center;
+	color: #753422;
+	
+}
+h4 {
+	color: #492F10;
+	margin-bottom: 0;
+	margin-left: 20px;
+}
+li{
+	margin-left: 3%;
+}
+hr{
+	width: 100%;
+}
+ul {
+	padding: 3%;
+	background: #FDF6F0;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+ol {
+	background: #FDF6F0;
+	margin-top: 1%;
+	padding: 2%;
+}
+div {
+	line-height: 200%;
+	margin-left: auto;
+	margin-right:auto;
+	margin-top: 0;
+}
+
+div:not(#quiz), div:not(#title) {
+	padding: 3%;
+}
+
+#quiz, #result {
+	background: #FDF6F0;
+	padding: 1%;
+	border: 2px solid #FCD8D4;
+	margin: 3%;
+}
+input{
+	margin-left: 3%;
+}
+
+input[type="button"], input[type="submit"] {
+	border: none;
+	color: #753422;
+	background: #F8E2CF;
+	font-size: 20px;
+	float: right;
+	margin-right: 5%;
+}
+
+input:hover {
+	color: #753422;
+	font-weight: bold;
+	background: #FCD8D4;
+	border: 2px solid #FDF6F0;
+}
+
+#foot {
+	color: #753422;
+	font-weight: bold;
+	text-align: center;
+}
+
+p {
+	line-height: 160%;
+}
+
+b {
+	text-indent: -2em;
+}
+
+table {
+	width: 100%;
+}
+
+td {
+	width: 20%;
+}
+
+progress {
+	width: 100%;
+}
+
+.h_graph ul{margin:0 0 0 20px;padding:1px 0 0 0;border:1px solid #ddd;border-top:0;border-right:0;font-size:11px;font-family:Tahoma, Geneva, sans-serif;list-style:none}
+.h_graph li{position:relative;margin:10px 0;vertical-align:top;white-space:nowrap}
+.h_graph .g_bar{display:inline-block;position:relative;height:20px;border:1px solid #ccc;border-left:0;background:#e9e9e9}
+.h_graph .g_bar span{position:absolute;top:0;right:-50px;width:40px;color:#767676;line-height:20px}
