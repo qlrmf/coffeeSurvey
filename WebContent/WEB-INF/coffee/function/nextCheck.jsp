@@ -1,11 +1,11 @@
-<%@page import="coffeeSurvey.service.CoffeeService"%>
+<%@page import="survey.service.CoffeeService"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<jsp:useBean id="info" class="coffeeSurvey.model.InfoVo" scope="page"/>
+<jsp:useBean id="info" class="survey.model.InfoVo" scope="page"/>
 <jsp:setProperty name="info" property="*" />
-<jsp:useBean id="taste" class="coffeeSurvey.model.TasteVo" scope="page"/>
+<jsp:useBean id="taste" class="survey.model.TasteVo" scope="page"/>
 <jsp:setProperty name="taste" property="*" />
-<jsp:useBean id="think" class="coffeeSurvey.model.ThinkVo" scope="page"/>
+<jsp:useBean id="think" class="survey.model.ThinkVo" scope="page"/>
 <jsp:setProperty name="think" property="*" />
 
 <%

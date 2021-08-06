@@ -1,5 +1,5 @@
 <%@page import="java.util.*"%>
-<%@page import="coffeeSurvey.model.QuestionCoffee"%>
+<%@page import="survey.model.QuestionCoffee"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 
@@ -10,7 +10,7 @@
 
 <article>
 	<div>
-		<form action="<%=request.getContextPath()%>/coffee/function/Insert.jsp">
+		<form action="${pageContext.request.contextPath}/coffee/insert.do"  method='post'>
 			<ol>
 				<% QuestionCoffee qu = new QuestionCoffee();
 					HashMap<String, String[]> hs = qu.getCafeRadio();

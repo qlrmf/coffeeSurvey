@@ -1,4 +1,4 @@
-package coffeeSurvey.model;
+package survey.model;
 
 import java.util.Arrays;
 
@@ -18,7 +18,18 @@ public class ThinkVo {
 	private int[] think3;
 	private int[] think4;
 	
+	public ThinkVo() {}
 	
+	public ThinkVo(int think1, int think2, int[] think3, int[] think4) {
+		super();
+		this.think1 = think1;
+		this.think2 = think2;
+		this.think3 = think3;
+		this.think4 = think4;
+	}
+
+
+
 	public int getNum() {
 		return num;
 	}

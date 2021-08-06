@@ -1,15 +1,15 @@
 <%@page import="java.util.*"%>
-<%@page import="coffeeSurvey.model.QuestionCoffee"%>
+<%@page import="survey.model.QuestionCoffee"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 
 <jsp:include page="coffeeHeader.jsp" flush="false"/>
 	<h1>part1. 커피 취향 찾기</h1>
 	<h4>당신의 취향에 딱 맞는 커피를 찾아보세요. 다음 설문을 통해 나만의 커피를 찾아보세요
-		(원하지 않는다면 그냥 넘어가도 좋아요 <a href="<%=request.getContextPath()%>/coffee/function/nextCheck.jsp">넘어가기</a>)</h4>
+		(원하지 않는다면 그냥 넘어가도 좋아요 <a href="${pageContext.request.contextPath}/coffee/part2next.do">넘어가기</a>)</h4>
 <article>
 	<div>
-		<form action="<%=request.getContextPath()%>/coffee/function/nextCheck.jsp">
+		<form action="${pageContext.request.contextPath}/coffee/part2.do" method='post'>
 			<ol>
 				<% QuestionCoffee qu = new QuestionCoffee();
 					HashMap<String, String[]> hs = qu.getTasteRadio();

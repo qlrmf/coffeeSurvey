@@ -1,5 +1,5 @@
 <%@page import="java.util.*"%>
-<%@page import="coffeeSurvey.model.QuestionCoffee"%>
+<%@page import="survey.model.QuestionCoffee"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 
@@ -8,7 +8,7 @@
 		<h4>당신이 커피를 얼마나 자주, 어디에서 먹는지 생각해보세요</h4>
 <article>
 	<div>
-		<form action="<%=request.getContextPath()%>/coffee/function/nextCheck.jsp">
+		<form action="${pageContext.request.contextPath}/coffee/part3.do" method='post'>
 			<ol>
 				<% QuestionCoffee qu = new QuestionCoffee();
 					HashMap<String, String[]> hs = qu.getThinkRadio();

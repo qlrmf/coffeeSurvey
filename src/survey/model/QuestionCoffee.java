@@ -1,4 +1,4 @@
-package coffeeSurvey.model;
+package survey.model;
 
 import java.util.HashMap;
 

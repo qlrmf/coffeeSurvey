@@ -1,4 +1,4 @@
-package coffeeSurvey.model;
+package survey.model;
 
 /*
 create table COFFEE_TASTE(
@@ -20,6 +20,20 @@ public class TasteVo {
 	private int taste5;
 	private int taste6;
 	
+	public TasteVo() {}
+	
+	
+	
+	public TasteVo(int taste1, int taste2, int taste3, int taste4, int taste5, int taste6) {
+		super();
+		this.taste1 = taste1;
+		this.taste2 = taste2;
+		this.taste3 = taste3;
+		this.taste4 = taste4;
+		this.taste5 = taste5;
+		this.taste6 = taste6;
+	}
+
 	public int getNum() {
 		return num;
 	}

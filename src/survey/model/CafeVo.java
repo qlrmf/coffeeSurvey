@@ -1,4 +1,4 @@
-package coffeeSurvey.model;
+package survey.model;
 
 /*
 create table COFFEE_CAFE(
@@ -25,6 +25,20 @@ public class CafeVo {
 	private int cafe7;
 	private int cafe8;
 	
+	public CafeVo() {}
+	
+	public CafeVo(int cafe1, int cafe2, int cafe3, int cafe4, int cafe5, int cafe6, int cafe7, int cafe8) {
+		super();
+		this.cafe1 = cafe1;
+		this.cafe2 = cafe2;
+		this.cafe3 = cafe3;
+		this.cafe4 = cafe4;
+		this.cafe5 = cafe5;
+		this.cafe6 = cafe6;
+		this.cafe7 = cafe7;
+		this.cafe8 = cafe8;
+	}
+
 	public int getNum() {
 		return num;
 	}

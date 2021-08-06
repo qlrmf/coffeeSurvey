@@ -1,8 +1,8 @@
 <%@page import="java.util.Arrays"%>
 <%@page import="java.util.HashMap"%>
-<%@page import="coffeeSurvey.model.QuestionCoffee"%>
+<%@page import="survey.model.QuestionCoffee"%>
 <%@page import="java.util.Map"%>
-<%@page import="coffeeSurvey.service.CoffeeService"%>
+<%@page import="survey.service.CoffeeService"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 
@@ -14,11 +14,9 @@
 </article>
 <%
 	QuestionCoffee qu = new QuestionCoffee();
-	int num = Integer.parseInt(request.getParameter("num"));
 	
-	CoffeeService ser = CoffeeService.getInstance();
-	Map<Integer, Map<Integer, Integer>> result = ser.totalPage(num);
-
+	Map<Integer, Map<Integer, Integer>> result = (Map<Integer, Map<Integer, Integer>>)session.getAttribute("part");
+	session.removeAttribute("part");
 	HashMap<String, String[]> qu1 = qu.getThinkRadio();
 	HashMap<String, String[]> qu2 = qu.getThinkCheck();
 	

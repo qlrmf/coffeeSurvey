@@ -1,4 +1,4 @@
-package coffeeSurvey.model;
+package survey.model;
 
 /*
 create table COFFEE_INFO(

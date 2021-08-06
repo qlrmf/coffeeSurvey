@@ -1,9 +1,9 @@
-package coffeeSurvey.service;
+package survey.service;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import coffeeSurvey.model.CoffeeDao;
+import survey.model.CoffeeDao;
 
 public class CoffeeService {
 	private static CoffeeService instance;
@@ -26,6 +26,7 @@ public class CoffeeService {
 	
 	
 	public boolean regist() {
+		System.out.println(vo);
 		if(vo.size()==4 && dao.insertCoffee(vo)==4) {
 			return true;
 		}

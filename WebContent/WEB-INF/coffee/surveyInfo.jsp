@@ -6,7 +6,7 @@
 	<h4>통계를 위해 아래 정보를 부탁드려요</h4>
 <article>
 	<div>
-	<form action="<%=request.getContextPath()%>/coffee/function/nextCheck.jsp">
+	<form action="${pageContext.request.contextPath}/coffee/part1.do" method='post'>
 		<ul>
 			<br><hr>
 			<li><b>성별</b></li>
